@@ -1,7 +1,9 @@
 :root {
-  --navbar-gradient-bottom: #ffffff00;
-  --navbar-gradient-top: #e0e0e075;
-  --navbar-background-color: #fff;
+  --navbar-background-color: #ffffff00;
+  --navbar-items-color: #fff;
   --white: #fff;
-  --black: #000;
+  --white-title: #f0f0f0;
+  --white-desc: #c8c8c8;
+  --blue: #1eaeb0;
+  --black: #080808;
 }

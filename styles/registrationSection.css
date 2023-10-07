@@ -1,0 +1,107 @@
+@import url(colors.css);
+
+.registration {
+  background-color: var(--white);
+  padding: 1rem;
+  padding-bottom: 10rem;
+}
+
+.registration .container {
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+@media (width < 1200px) {
+  .registration .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.form-wrapper {
+  width: 30svw;
+}
+
+@media (width < 1600px) {
+  .form-wrapper {
+    width: 100%;
+  }
+}
+
+.form-wrapper h6 {
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.form-wrapper h6::after {
+  display: inline;
+  position: relative;
+  inset: 0;
+
+  content: "*";
+
+  color: red;
+}
+
+.form-wrapper input {
+  border: 2px solid var(--black);
+  padding: 15px;
+  outline: none;
+  width: 90%;
+  border-bottom-left-radius: 7px;
+
+  transition: all 0.2s ease-in-out;
+}
+
+@keyframes invalidShake {
+  0% {
+    transform: translate(-10px);
+  }
+  50% {
+    transform: translate(10px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+.form-wrapper input:invalid {
+  border: 2px solid red;
+  color: red;
+
+  animation: invalidShake 0.2s;
+  animation-iteration-count: 1;
+}
+
+.class {
+  border: 2px solid var(--black);
+  padding: 10px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+}
+
+.class:hover {
+  cursor: pointer;
+  border: 2px solid var(--blue);
+}
+
+.class * {
+  margin: 5px;
+}
+
+.form-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}

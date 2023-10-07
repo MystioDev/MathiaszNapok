@@ -7,13 +7,15 @@
   align-items: center;
   background: var(--navbar-background-color);
   width: 100svw;
+  z-index: 10;
 }
 
 .navbar .item {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
   width: 100svw;
+  padding: 1rem;
 }
 
 .navbar .items {
@@ -22,11 +24,18 @@
   align-items: center;
   width: 100svw;
   padding-right: 1rem;
-  gap: 20px;
+  gap: 50px;
 }
 
 .nav-item {
   list-style: none;
+}
+
+.nav-item a {
+  color: var(--navbar-items-color);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .nav-logo {
@@ -39,7 +48,7 @@
     padding-bottom: 1rem;
   }
 
-  .navbar .item h4 {
-    display: none;
+  .navbar .items {
+    gap: 20px;
   }
 }
