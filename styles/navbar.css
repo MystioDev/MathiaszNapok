@@ -1,0 +1,45 @@
+@import url(colors.css);
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--navbar-background-color);
+  width: 100svw;
+}
+
+.navbar .item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100svw;
+}
+
+.navbar .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100svw;
+  padding-right: 1rem;
+  gap: 20px;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-logo {
+  height: 3rem;
+}
+
+@media (width < 475px) {
+  .navbar {
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+  }
+
+  .navbar .item h4 {
+    display: none;
+  }
+}

@@ -1,0 +1,43 @@
+.hero-container {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+
+  background-image: url(../images/mathiasznapok_2022_2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-blank {
+  width: 30%;
+  height: 0;
+}
+
+.hero-container h1 {
+  margin: 0;
+  font-size: 5rem;
+}
+
+.hero-container p {
+  margin-bottom: 2.7rem;
+  font-size: 1.25rem;
+}
+
+@media (width < 475px) {
+  .hero-container {
+    width: 100svw;
+  }
+
+  .hero-blank {
+    display: none;
+  }
+
+  .hero-container h1 {
+    font-size: 3.5rem;
+  }
+}
