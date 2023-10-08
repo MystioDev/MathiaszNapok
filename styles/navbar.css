@@ -1,7 +1,7 @@
 @import url(colors.css);
 
 .navbar {
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -44,7 +44,7 @@
 
 @media (width < 475px) {
   .navbar {
-    padding-top: 1.25rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
   }
 
