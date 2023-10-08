@@ -6,7 +6,7 @@
   justify-content: space-around;
   align-items: center;
   background: var(--navbar-background-color);
-  width: 100svw;
+  width: 100%;
   z-index: 10;
 }
 
@@ -46,6 +46,7 @@
   .navbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    width: 100%;
   }
 
   .navbar .items {
