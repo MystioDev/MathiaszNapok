@@ -1,9 +1,19 @@
 @import url(colors.css);
 
 .registration {
-  background-color: var(--white);
   padding: 1rem;
   padding-bottom: 10rem;
+  background-color: var(--white);
+}
+
+.registration::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  height: auto;
+  width: 100svw;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 .registration .container {
@@ -53,6 +63,7 @@
 }
 
 .form-wrapper input {
+  background-color: rgba(255, 255, 255, 0.5);
   border: 2px solid var(--black);
   padding: 15px;
   outline: none;
@@ -60,6 +71,11 @@
   border-bottom-left-radius: 7px;
 
   transition: all 0.2s ease-in-out;
+}
+
+.form-wrapper input::placeholder {
+  color: var(--black);
+  opacity: 1;
 }
 
 @keyframes invalidShake {
@@ -87,6 +103,7 @@
   padding: 10px;
   border-radius: 20px;
   border-bottom-left-radius: 0;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .class:hover {
@@ -104,4 +121,69 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.registration-title {
+  font-size: 3rem;
+}
+
+.registration-desc {
+  font-size: 1.5rem;
+
+  background: -webkit-linear-gradient(180deg, var(--black), var(--blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background-shape {
+  z-index: -999;
+  content: "";
+  height: 50svh;
+  width: 50svw;
+  background: radial-gradient(
+    circle,
+    rgba(40, 182, 208, 1) 0%,
+    rgba(255, 255, 255, 0) 41%,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.background-shape:nth-child(1) {
+  bottom: 2.5rem;
+  left: 2.5rem;
+}
+
+.background-shape:nth-child(2) {
+  top: 2.5rem;
+  right: 2.5rem;
+}
+
+.background-shape:nth-child(3) {
+  top: 10rem;
+  left: 10rem;
+}
+
+.background-shape:nth-child(4) {
+  bottom: 10rem;
+  right: 10rem;
+}
+
+@media (width > 1200px) {
+  .background-shape:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (width < 1200px) {
+  .background-shape:nth-child(3) {
+    top: 40rem;
+    left: 5rem;
+  }
+
+  .background-shape:nth-child(4) {
+    bottom: 40rem;
+    right: 5rem;
+  }
 }
