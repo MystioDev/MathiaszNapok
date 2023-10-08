@@ -2,11 +2,11 @@ const updateGallery = (index) => {
   const heroSectionGallery = document.getElementById("hero");
 
   const images = [
-    'url("http://127.0.0.1:5500/images/mathiasznapok_2022_1.png")',
-    'url("http://127.0.0.1:5500/images/mathiasznapok_2022_2.png")',
-    'url("http://127.0.0.1:5500/images/mathiasznapok_2022_3.png")',
-    'url("http://127.0.0.1:5500/images/mathiasznapok_2022_4.png")',
-    'url("http://127.0.0.1:5500/images/mathiasznapok_2022_5.png")',
+    'url("../images/mathiasznapok_2022_1.png")',
+    'url("../images/mathiasznapok_2022_2.png")',
+    'url("../images/mathiasznapok_2022_3.png")',
+    'url("../images/mathiasznapok_2022_4.png")',
+    'url("../images/mathiasznapok_2022_5.png")',
   ];
 
   heroSectionGallery.style.animation = "galleryFadeOut 0.4s ease-in-out 0s 1";
