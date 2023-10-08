@@ -48,7 +48,7 @@
 
 @media (width < 1600px) {
   .form-wrapper {
-    width: 100%;
+    width: 100svw;
   }
 }
 

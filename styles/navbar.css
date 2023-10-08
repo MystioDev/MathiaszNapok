@@ -47,7 +47,11 @@
   .navbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    width: 100svw;
+    width: 90svw;
+  }
+
+  .nav-item a {
+    font-size: 0.8rem;
   }
 
   .navbar .items {
