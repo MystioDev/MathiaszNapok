@@ -6,8 +6,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
+}
 
-  background-image: url(../images/mathiasznapok_2022_5.png);
+#hero {
+  background-image: url(../images/mathiasznapok_2022_1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
