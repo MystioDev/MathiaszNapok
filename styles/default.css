@@ -128,3 +128,7 @@ a:hover {
     opacity: 1;
   }
 }
+
+.flex {
+  display: flex;
+}

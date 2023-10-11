@@ -123,10 +123,16 @@
 
 .form-grid {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+@media (width < 520px) {
+  .form-grid {
+    justify-content: center;
+  }
 }
 
 .registration-title {
@@ -192,4 +198,16 @@
     bottom: 40rem;
     right: 5rem;
   }
+}
+
+.class > h1 {
+  color: var(--black);
+}
+
+.class h1 {
+  color: var(--black);
+}
+
+.section-title {
+  font-size: 2rem;
 }
