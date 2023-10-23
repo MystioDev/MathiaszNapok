@@ -1,0 +1,22 @@
+@import url(colors.css);
+
+.footer-content {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-icon {
+  height: 30px;
+  width: 30px;
+
+  transform: scale(1);
+  transition: all ease-in-out 0.4s;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+}

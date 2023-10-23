@@ -27,3 +27,35 @@ setInterval(() => {
     imageIndex++;
   }
 }, 3000);
+
+const one = document.querySelectorAll(".class1");
+const two = document.querySelectorAll(".class2");
+const three = document.querySelectorAll(".class3");
+
+let oneSelectedIdx = 0;
+let twoSelectedIdx = 0;
+let threeSelectedIdx = 0;
+
+one.forEach((element, idx) => {
+  element.addEventListener("click", () => {
+    one[oneSelectedIdx].style.backgroundColor = "var(--white)";
+    element.style.backgroundColor = "var(--blue)";
+    oneSelectedIdx = idx;
+  });
+});
+
+two.forEach((element, idx) => {
+  element.addEventListener("click", () => {
+    two[twoSelectedIdx].style.backgroundColor = "var(--white)";
+    element.style.backgroundColor = "var(--blue)";
+    twoSelectedIdx = idx;
+  });
+});
+
+three.forEach((element, idx) => {
+  element.addEventListener("click", () => {
+    three[threeSelectedIdx].style.backgroundColor = "var(--white)";
+    element.style.backgroundColor = "var(--blue)";
+    threeSelectedIdx = idx;
+  });
+});
